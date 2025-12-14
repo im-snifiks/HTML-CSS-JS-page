@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Карточки курсов — Flex Version</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="wrap" data-view="courses">
+
+  <header class="nav">
+    <div class="nav__inner">
+
+        <!-- Логотип -->
+        <div class="nav__logo">
+            <!-- LOGO IMAGE HERE -->
+            <img src="/img/logo.svg">
+        </div>
+
+        <!-- Навигация -->
+        <nav class="nav__menu">
+            <span class="nav__bg"></span>
+            <button class="nav__item active">Курсы</button>
+            <button class="nav__item">Видеолекции</button>
+            <button class="nav__item">Объявления</button>
+            <button class="nav__item">Пересдачи</button>
+        </nav>
+
+        <!-- Аккаунт -->
+        <div class="nav__account">
+            <!-- ACCOUNT ICON HERE -->
+            <span>👤</span>
+        </div>
+
+        <!-- Бургер -->
+        <button class="nav__burger">
+          <svg width="28" height="20" viewBox="0 0 28 20" fill="none">
+            <rect width="28" height="3" rx="1.5" fill="#1E1E1E"/>
+            <rect y="8.5" width="28" height="3" rx="1.5" fill="#1E1E1E"/>
+            <rect y="17" width="28" height="3" rx="1.5" fill="#1E1E1E"/>
+          </svg>
+        </button>
+
+    </div>
+  </header>
+  
+  <main>
+
+  <div class="courses-header-inner" id="coursesHeader_bg">
+      <h1 class="courses-header-title" id="coursesHeader_text">Ваши курсы</h1>
+      <div class="courses-header-semester">
+           <span class="courses-header-number">3</span>
+           <span class="courses-header-label">семестр</span>
+      </div>
+  </div>
+
+    <section class="cards-grid">
+
+      <!-- Карточка 1 -->
+      <article class="course-card">
+        <div class="card-media"><img src="/img/3d.png"></div>
+
+        <div class="card-content">
+          <div class="card-head">
+            <h3 class="course-title" id="cardTitle_1">Основы 3D-моделирования и визуализации</h3>
+            <span class="course-tag">Экзамен</span>
+          </div>
+
+          <ul class="course-list">
+            <li>Материалы</li>
+            <li>Задания</li>
+            <li>Вебинары</li>
+            <li>Тестирование</li>
+          </ul>
+
+          <div class="card-foot">
+            <p class="teacher">Ивенский А.И.</p>
+            <button class="msg-btn">✉︎</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Карточка 2 -->
+      <article class="course-card">
+        <div class="card-media"><img src="/img/дизайн-проектир.png"></div>
+        <div class="card-content">
+          <div class="card-head">
+            <h3 class="course-title" id="cardTitle_2">Методы и технологии дизайн-проектирования</h3>
+            <span class="course-tag">Экзамен</span>
+          </div>
+          <ul class="course-list">
+            <li>Материалы</li>
+            <li>Задания</li>
+            <li>Вебинары</li>
+            <li>Тестирование</li>
+          </ul>
+          <div class="card-foot">
+            <p class="teacher">Ивенский А.И.</p>
+            <button class="msg-btn">✉︎</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Карточка 3 -->
+      <article class="course-card">
+        <div class="card-media"><img src="/img/vr.png"></div>
+        <div class="card-content">
+          <div class="card-head">
+            <h3 class="course-title" id="cardTitle_3">VR-архитектура и концептуальное проектирование</h3>
+            <span class="course-tag">Экзамен</span>
+          </div>
+          <ul class="course-list">
+            <li>Материалы</li>
+            <li>Задания</li>
+            <li>Вебинары</li>
+            <li>Тестирование</li>
+          </ul>
+          <div class="card-foot">
+            <p class="teacher">Ивенский А.И.</p>
+            <button class="msg-btn">✉︎</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Карточка 4 -->
+      <article class="course-card">
+        <div class="card-media"><img src="/img/eng.png"></div>
+        <div class="card-content">
+          <div class="card-head">
+            <h3 class="course-title" id="cardTitle_4">Английский язык</h3>
+            <span class="course-tag">Экзамен</span>
+          </div>
+          <ul class="course-list">
+            <li>Материалы</li>
+            <li>Задания</li>
+            <li>Вебинары</li>
+            <li>Тестирование</li>
+          </ul>
+          <div class="card-foot">
+            <p class="teacher">Ивенский А.И.</p>
+            <button class="msg-btn">✉︎</button>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="footer-content">
+
+        <!-- Поддержка -->
+        <div class="footer-support">
+            <h3 class="footer-title">Поддержка</h3>
+            <div class="footer-support-inner-content">
+              <p class="footer-text">+7 (915) 515 55-55</p>
+              <p class="footer-text">helpedu@mirea.ru</p>
+            </div>
+        </div>
+
+        <span class="footer-divider"></span>
+
+        <!-- Контакты -->
+        <div class="footer-contacts">
+            <h3 class="footer-title">Контакты</h3>
+
+            <div class="footer-contacts-inner-content">
+                <span class="footer-desc">Учебный отдел</span>
+                <span class="footer-phone">+7 (915) 155 55-55</span>
+
+                <span class="footer-desc">Ректорат</span>
+                <span class="footer-phone">+7 (915) 155 55-55</span>
+
+                <span class="footer-desc">
+                    Отдел сотрудничества<br>
+                    с иностранными студентами
+                </span>
+                <span class="footer-phone">+7 (915) 155 55-55</span>
+            </div>
+        </div>
+
+        <span class="footer-divider"></span>
+
+        <!-- Социальные сети -->
+        <div class="footer-block">
+            <h3 class="footer-title">Социальные сети</h3>
+
+            <div class="footer-socials">
+                <div class="footer-icon"><img src="/img/VK.png"></div>
+                <div class="footer-icon"><img src="/img/OK.png"></div>
+                <div class="footer-icon"><img src="/img/TG.png"></div>
+                <div class="footer-icon"><img src="/img/RT.png"></div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<script>
+    const items = document.querySelectorAll('.nav__item');
+
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            document
+                .querySelector('.nav__item.active')
+                ?.classList.remove('active');
+
+            item.classList.add('active');
+        });
+    });
+</script>
+
+<script>
+const menu = document.querySelector('.nav__menu');
+const bg = document.querySelector('.nav__bg');
+const newitems = document.querySelectorAll('.nav__item');
+
+function moveBgTo(item) {
+    const menuRect = menu.getBoundingClientRect();
+    const itemRect = item.getBoundingClientRect();
+
+    bg.style.width = itemRect.width + 12 + 'px';
+    bg.style.transform =
+        `translateX(${itemRect.left - menuRect.left-10}px)`;
+}
+
+newitems.forEach(item => {
+    item.addEventListener('click', () => {
+        document.querySelector('.nav__item.active')?.classList.remove('active');
+        item.classList.add('active');
+        moveBgTo(item);
+    });
+});
+
+/* стартовая позиция */
+moveBgTo(document.querySelector('.nav__item.active'));
+</script>
+
+<script>
+const navItems = document.querySelectorAll('.nav__item');
+const header_bg = document.getElementById('coursesHeader_bg');
+const header_text = document.getElementById('coursesHeader_text');
+const cardTitle_1 = document.getElementById('cardTitle_1');
+const cardTitle_2 = document.getElementById('cardTitle_2');
+const cardTitle_3 = document.getElementById('cardTitle_3');
+const cardTitle_4 = document.getElementById('cardTitle_4');
+
+navItems.forEach(item => {
+    item.addEventListener('click', () => {
+
+        // 1. Активный пункт навбара
+        document.querySelector('.nav__item.active')?.classList.remove('active');
+        item.classList.add('active');
+
+        // 2. Меняем контент (ИМИТАЦИЯ ЭКРАНА)
+        const text = item.textContent.trim();
+
+        if (text === 'Курсы') {
+            header_bg.style.background = '#262626';
+            header_text.textContent = 'Ваши курсы';
+            cardTitle_1.textContent = 'Основы 3D-моделирования и визуализации';
+            cardTitle_2.textContent = 'Методы и технологии дизайн-проектирования';
+            cardTitle_3.textContent = 'VR-архитектура и концептуальное проектирование';
+            cardTitle_4.textContent = 'Английский язык';
+        }
+
+        if (text === 'Видеолекции') {
+            header_bg.style.background = '#0063B5';
+            header_text.textContent = 'Видеолекции';
+            cardTitle_1.textContent = 'Видеолекции #1';
+            cardTitle_2.textContent = 'Видеолекции #2';
+            cardTitle_3.textContent = 'Видеолекции #3';
+            cardTitle_4.textContent = 'Видеолекции #4';
+        }
+
+        if (text === 'Объявления') {
+            header_bg.style.background = '#6D009F';
+            header_text.textContent = 'Объявления';
+            cardTitle_1.textContent = 'Объявление #1';
+            cardTitle_2.textContent = 'Объявление #2';
+            cardTitle_3.textContent = 'Объявление #3';
+            cardTitle_4.textContent = 'Объявление #4';
+        }
+
+        if (text === 'Пересдачи') {
+            header_bg.style.background = '#9F006F';
+            header_text.textContent = 'Пересдачи';
+            cardTitle_1.textContent = 'Пересдача #1';
+            cardTitle_2.textContent = 'Пересдача #2';
+            cardTitle_3.textContent = 'Пересдача #3';
+            cardTitle_4.textContent = 'Пересдача #4';
+        }
+    });
+});
+</script>
+
+</body>
+</html>
